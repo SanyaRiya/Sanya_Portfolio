@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header"></header>
+    
+    
+    <header class="header">
+        
+        <nav class="navbar">
+            <a href="#home">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    </header>
+    <section class="home"> 
+        <div class="home-content">
+            <h3>Hello, It's Me </h3>
+            <h1>Sanya Singh</h1>
+            <h3>And I'm a</h3>
+            <p>third-year Computer Science Engineering student with expertise in web development and UI/UX design. Skilled in creating responsive web applications and user-focused interfaces, passionate about innovation and impactful projects..</p>
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/sanya-singh-7ab89b27b" class="linkedin"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/SanyaRiya" class="Github"><i class='bx bxl-github'></i></a> 
+            </div>
+            <a href="https://drive.google.com/file/d/1PHxC_i4GdCPOw0LnjebiuWf59JK5oMcC/view?usp=sharing" class="btn-box">Download Resume</a>
+        </div>
+        
+        <img src="me.jpg" alt="" class="me">
+    </section>
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item1">
+                <div class="timeline-dot">
+                    <div class="timeline-date">2022-2026</div>
+                    <div class="timeline-content">
+                        <h3>Bachelors in Computer Science Engineering</h3>
+                        <p>Chandigarh University, Gharuan
+                            Session: 2022-2026 | Score: 8.34 CGPA
+                            </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="timeline-item2">
+                    <div class="timeline-dot">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <h3>Intermediate</h3>
+                            <p>(CBSE) | Lucknow Public School, Lucknow
+                                Session: 2021-2022 | Percentage: 92.2%
+                                </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item3">
+                        <div class="timeline-dot">
+                            <div class="timeline-date">2020</div>
+                            <div class="timeline-content">
+                                <h3>Matriculation</h3>
+                                <p>(CBSE) | St. Anthony's School, Barabanki
+                                    Session: 2019-2020 | Percentage: 92.6%
+                                    </p>
+                            </div>
+                            </div>
+                        </div>
+            </div>
+    </section>
+    
+    <section class="skills" id="skills">
+        <h1 class="sub-title">MY Skills</h1>
+        <div class="skills-container">
+            <div class="technical-skills">
+                <h2 class="skills-heading">Technical Competencies</h2>
+                <ul>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>DBMS</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div class="interpersonal-skills">
+                <h2 class="skills-heading">Interpersonal Skills</h2>
+                <ul>
+                    <li>Effective Communication</li>
+                    <li>Team Collaboration</li>
+                    <li>Problem-Solving</li>
+                    <li>Leadership</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projects-container">
+            <div class="project-item">
+                <h2>TripUnite (2024)</h2>
+                <p>Designed the UI/UX of a travel website using Figma, enhancing user experience through intuitive navigation and appealing aesthetics.</p>
+            </div>
+            <div class="project-item">
+                <h2>TravelMate (2024)</h2>
+                <p>Built a travel companion website using HTML, CSS, and JavaScript to help users plan trips efficiently.</p>
+            </div>
+            <div class="project-item">
+                <h2>Currency Converter (2023)</h2>
+                <p>Created a currency converter tool utilizing HTML, CSS, JavaScript, and a currency exchange API.</p>
+            </div>
+            <div class="project-item">
+                <h2>MentHelp Web Application (2023)</h2>
+                <p>Led the design of a mental health web application’s UI/UX using Figma, focusing on user engagement and accessibility.</p>
+            </div>
+            <div class="project-item">
+                <h2>Netflix Clone (2022)</h2>
+                <p>Developed a Netflix-like platform using HTML, CSS, demonstrating proficiency in front-end development.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="sub-title">Contact Me</h1>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="send-message-btn">Send Message</button>
+        </form>
+    </section>
+        
+    
+</body>
+</html>

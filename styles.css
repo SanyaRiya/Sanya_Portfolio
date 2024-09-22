@@ -1,0 +1,410 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    
+}
+body{
+    color: #ffffff;
+    background-color: black;
+    
+}
+.header {
+    position: fixed;
+    top: 20px; /* Add some distance from the top */
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center; /* Center vertically */
+    position: relative; /* For positioning the neon circle */
+}
+
+.logo {
+    font-size: 30px; /* Adjust size as needed */
+    color: #ffffff; /* White color for the logo text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 700; /* Bold font for emphasis */
+    z-index: 1; /* Ensure the logo appears above the circle */
+}
+
+/* Neon Circle */
+.logo-container::before {
+    content: '';
+    position: absolute;
+    width: 80px; /* Adjust size for the circle */
+    height: 80px; /* Adjust size for the circle */
+    border-radius: 50%; /* Make it a circle */
+    background-color: transparent; /* No fill */
+    border: 5px solid #0ef; /* Neon border color */
+    box-shadow: 0 0 20px #0ef; /* Glow effect */
+    z-index: 0; /* Behind the logo */
+    left: -10px; /* Position the circle slightly left */
+}
+
+
+.navbar{
+    margin-left: 570px;
+    
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color: #0ef;
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home img {
+    margin-left: auto;
+    width: 500px; 
+    height: 500px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.home-content h3 span{
+    color:#0ef
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+
+}
+.home-content p{
+    font-size: 20px;
+
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 10px 15px 30px 0;
+}
+.home-sci a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+
+/* EDUCATION CSS */
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem 0;
+    color: white;
+}
+
+.education{
+    padding: 100px 15px;
+    background-color: var(--second-bg-color);
+}
+.education h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+   background-color:var(--main-color);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.timeline-item{
+    margin-bottom: 50px;
+    width: 50%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) .timeline-content{
+    text-align: right;
+    transform: translateX(-20%);
+}
+
+.timeline-item:nth-child(even) .timeline-content{
+    text-align: left;
+    transform: translateX(20%);
+} 
+
+
+
+/* .timeline-dot{
+    height: 25px;
+    width: 25px; 
+    background-color: #00f0ff; neon blue dot
+    box-shadow: 0 0 20px #00f0ff, 0 0 50px #00f0ff;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 1;
+} */
+
+.timeline-date{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.timeline-content{
+    background-color: #141414;
+    border: 2px solid #00f0ff; /* neon border */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00f0ff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+} 
+.timeline-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00f0ff;
+}
+
+.timeline-content h3{
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.timeline-content p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height:1.5rem;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width:50px;
+}
+
+.sub-title{
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem 0;
+    color: white;
+}
+.skills {
+    padding: 100px 15px;
+    background-color: #141414;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.skills-heading {
+    font-size: 2rem;
+    color: #0ef;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #00f0ff; /* Neon border */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+/* PROJECTS CSS */
+.projects {
+    padding: 100px 15px;
+    background-color: #141414;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-item {
+    background-color: #1f1f1f;
+    border: 2px solid #00f0ff; /* Neon border */
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+.project-item h2 {
+    font-size: 1.5rem;
+    color: #0ef;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/* contact me css */
+
+.contact {
+    padding: 100px 15px;
+    background-color: #141414;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #0ef;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 10px;
+    border: 2px solid #00f0ff; /* Neon border */
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0ef;
+    box-shadow: 0 0 10px #0ef;
+}
+
+.send-message-btn {
+    padding: 12px 20px;
+    background: #0ef;
+    border: none;
+    border-radius: 5px;
+    color: #081b29;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.send-message-btn:hover {
+    background: #00e0ff;
+    box-shadow: 0 0 20px #0ef;
+}
